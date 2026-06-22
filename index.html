@@ -119,7 +119,7 @@ footer { color:var(--muted); font-size:12px; font-style:italic; margin-top:34px;
     <h1>Podcast Digest<span class="arrow"> ←</span></h1>
     <p class="tagline">A low-energy reading of this week's podcasts — summaries over streaming.</p>
   </header>
-  <p class="sub">17 shows · Smart Brevity summaries, guest intros &amp; deep dives from full transcripts · history kept per show · updated June 21, 2026</p>
+  <p class="sub">19 shows · Smart Brevity summaries, guest intros &amp; deep dives from full transcripts · history kept per show · updated June 21, 2026</p>
   <input id="q" type="text" placeholder="Filter by show, guest, or topic…">
   <div id="cards"></div>
   <div id="notes"></div>
@@ -416,6 +416,36 @@ const DATA = {"podcasts":[
    {"h":"Risk, fear, and deliberate discomfort","p":"Training the adrenalized state.","b":["On wingsuiting, the first ~4 seconds off a fixed object have no airflow — the window where many die — so he urges thousands of skydives (he had ~3,000) and wind tunnels first.","He frames ice baths as a safe, reliable way to flood the body with adrenaline and practice working with a high-arousal state.","Both he and Huberman value deliberately experiencing how you function under-slept or stressed, so you know your true margins."]},
    {"h":"Suicide, trauma, and the price of success","p":"A candid, careful discussion.","b":["Suicide is markedly higher in special-operations communities and rising broadly.","Stumpf observes many operators arrived with 'a full seabag of trauma' before service, which isolation, lost identity and alcohol later compound; small daily check-ins, he says, genuinely matter.","On success he warns against 'having everything you wanted and having nothing' — money buffers some stress but can't buy connection or solve every pain."],
    "note":"This section discusses suicide and mental health. If it's ever personally relevant, please reach out to someone you trust or a crisis line — I can help you find resources."}]}
+]},
+{"show":"Latent Space","host":"swyx (Shawn Wang) & Alessio Fanelli","episodes":[
+ {"title":"The Professor of Outputmaxxing — Anjney Midha, AMP","date":"2026-06-18","link":"https://www.latent.space/p/anj",
+  "guest":"<b>Anjney Midha</b> is the investor behind AMP and a former Andreessen Horowitz general partner who has backed or led rounds in Anthropic, Mistral, Black Forest Labs, and Periodic Labs. He grew up in Singapore and got his start applying early deep learning to end-of-life care.",
+  "tldr":[
+   "<strong>The bottleneck isn't more GPUs.</strong> Midha argues the bigger prize is \"outputmaxxing\" the chips we already have — he notes a frontier lab like xAI may run at sub-10% Model FLOPs Utilization.",
+   "<strong>Data centers face a backlash.</strong> Up to ~20% of US data centers this year are at risk of stalling on community opposition over power, permitting and the grid.",
+   "<strong>Fund the \"athletes of the mind.\"</strong> His thesis: back researchers who've already shipped state-of-the-art work, then give them resources and excess compute.",
+   "<strong>Culture is actions, not beliefs.</strong> He frames leadership and mission alignment as something you prove through repeated action, not slogans."],
+  "deep":[
+   {"h":"Outputmaxxing: the real scaling lever","p":"Midha reframes the GPU-shortage narrative.","b":["He argues the obsessive question \"how do we get more GPUs?\" misses the bigger one: how to make the most of the ones already installed.","He cites that a frontier lab like xAI could be running at sub-10% Model FLOPs Utilization (MFU) — a hint at how much performance is being left on the table.","The episode's framing — \"outputmaxxing\" — is about squeezing far more useful output per chip rather than simply buying more silicon."]},
+   {"h":"The data-center backlash","p":"Compute growth is colliding with local communities.","b":["He says up to ~20% of US data centers this year are at risk — not from technology but from failing to win community support.","Communities care about more than jobs: power-grid strain, permitting, and environmental impact all factor in.","His proposed fix is aligned incentives — e.g., a data-center deal that actually lowers residents' electricity bills flips the politics from opposition to support."]},
+   {"h":"From end-of-life care to AI investing","p":"Midha's origin shaped his belief that data, not model cleverness, is the bottleneck.","b":["At 21, mentored by a Stanford professor, he tried using deep learning on patient datasets to predict — far more precisely than a clinician — how much time a terminally ill patient had left.","The lesson: once you have the dataset, even simple models (regression, small neural nets) work; today RL makes it \"extraordinary.\"","The recurring obstacle then and now, he says, is regulation and data access — not raw algorithmic capability."]},
+   {"h":"AMP's thesis: back the star researchers","p":"He describes who he funds and why.","b":["He'd \"fund researchers all day\" who have already put state-of-the-art work into the world — citing Black Forest Labs' Robin (Stable Diffusion) and Mistral's Guillaume (who created Llama at Meta).","Getting SOTA published, he argues, requires rare human leadership and organizational trust — itself a signal of who can lead a company.","A failure mode: brilliant researchers who don't actually want to be CEOs; AMP's \"Grid\" donates excess compute via nonprofits to keep them productive."]},
+   {"h":"Culture and the cost of leadership","p":"He closes on how missions hold together — or fray.","b":["He repeats a line he saw on an a16z wall: \"culture is not a set of beliefs, it's a set of actions.\"","When leaders stop taking the actions that demonstrate the mission they've claimed, he argues, culture frays and people start to leave.","He ties durable cultures back to mission alignment that is continually re-earned, not declared once."]}]}
+]},
+{"show":"BigDeal","host":"Codie Sanchez","episodes":[
+ {"title":"How Elon Musk Thinks About AI, Wealth, and Multiplanetary Life | Eric Jorgenson","date":"2026-06-17","link":"https://podscripts.co/podcasts/bigdeal/how-elon-musk-thinks-about-ai-wealth-and-multiplanetary-life-eric-jorgenson",
+  "guest":"<b>Eric Jorgenson</b> is an investor and writer — author of <i>The Almanack of Naval Ravikant</i> and <i>The Anthology of Balaji</i> — who spent roughly five years studying Elon Musk for his new book, <i>The Book of Elon</i>.",
+  "tldr":[
+   "<strong>Musk is a rare counterfactual.</strong> Jorgenson argues search, social and operating systems would have arrived anyway — but quality electric cars and reusable rockets likely would not have, at least not on this timeline.",
+   "<strong>Mission over odds.</strong> He casts Musk as risk-seeking and self-funding, willing to back SpaceX even at a fraction-of-a-percent chance because the mission mattered more than the probability.",
+   "<strong>Wealth is a byproduct.</strong> The math, he says, mandates a ~100:1 ratio — you must create trillions in value to capture a billion for yourself.",
+   "<strong>The algorithm.</strong> Musk's repeatable method — question requirements, delete, simplify, then automate — is the engine behind \"impossible\" results."],
+  "deep":[
+   {"h":"The counterfactual founder","p":"Jorgenson argues Musk's impact is uniquely non-inevitable.","b":["He contrasts Musk with founders whose products were inevitable: \"social networks would have happened without Zuckerberg,\" search without Larry and Sergey, operating systems without Gates.","By contrast, the industry showed no urgency on electric cars, and NASA was declining with no private innovation beyond Boeing and Lockheed.","His claim: it's \"not clear\" we'd have quality EVs or reusable rockets at all without Musk — a key enabler being the lithium-ion battery crossing a capability threshold."]},
+   {"h":"Risk-seeking and mission-driven","p":"The book frames Musk's psychology as mission-first.","b":["Jorgenson says Musk pursued SpaceX even at a tenth-of-a-percent to one-percent chance of success — \"he didn't care\" about the odds.","The logic: even failure would have meant proudly contributing to humanity's progress toward a vision he saw as essential.","He funded the missions himself and stuck with them through repeated near-failures until the world caught up to the idea."]},
+   {"h":"Wealth as a byproduct of value","p":"He reframes billionaire outcomes as downstream of value created.","b":["Adding a meaningful new capability \"at scale\" is what produces extreme wealth, Jorgenson argues — the wealth follows the contribution.","He puts a rough equation on it: you must provide trillions of dollars of value to capture a billion, a 100-to-1 ratio at minimum.","The implication is that outsized fortunes, in this telling, are a signal of value delivered rather than the goal itself."]},
+   {"h":"What leadership at the top feels like","p":"The conversation turns to the cost of being the final decision-maker.","b":["Citing another leader, Jorgenson notes that by the time decisions reach the top, \"only two bad choices are left\" — the easy ones were already handled below.","Musk's version: everyone wants the trappings of being CEO, but the job is \"a distillation of the worst problems in the company.\"","A practical lesson from the PayPal era: never burn bridges with ex-employees — keep capable, powerful people \"in your back pocket.\""]},
+   {"h":"The Musk algorithm","p":"Jorgenson distills Musk's repeatable operating method.","b":["The algorithm: question every requirement, delete parts and process, simplify, then accelerate and automate — in that order.","His favorite example: Tesla's service-center onboarding had ballooned into a month of training videos and quizzes that became the bottleneck, so the process itself got cut down.","He also notes Musk's obsession with communication bit-rate — reading instead of attending lectures, and preferring text to email because it's faster."]}]}
 ]}
 ],
 "no_matches":[{"item":"New York Yankees (topic)","note":"No matching episode across these shows this cycle. This topic mostly surfaces in sports/baseball podcasts; add one to the lists if you want Yankees coverage."}]
@@ -451,7 +481,7 @@ function matches(p,q){
 }
 function render(){
   const q=(document.getElementById('q').value||'').trim().toLowerCase();
-  const pods=DATA.podcasts.map((p,i)=>({p,i})).filter(o=>matches(o.p,q));
+  const pods=DATA.podcasts.map((p,i)=>({p,i})).filter(o=>matches(o.p,q)).sort((a,b)=>{const da=a.p.episodes[0].date,db=b.p.episodes[0].date;return da<db?1:da>db?-1:0;});
   cards.innerHTML=pods.map(o=>cardHTML(o.p,o.i)).join('') || '<p style="color:var(--muted);font-size:14px;font-style:italic;margin-top:22px">No shows match that filter.</p>';
   document.querySelectorAll('.epsel').forEach(s=>s.onchange=()=>{
     const pi=+s.dataset.pi, ep=DATA.podcasts[pi].episodes[+s.value];
