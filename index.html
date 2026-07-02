@@ -119,7 +119,7 @@ footer { color:var(--muted); font-size:12px; font-style:italic; margin-top:34px;
     <h1>Podcast Digest<span class="arrow"> ←</span></h1>
     <p class="tagline">A low-energy reading of this week's podcasts — summaries over streaming.</p>
   </header>
-  <p class="sub">19 shows · Smart Brevity summaries, guest intros &amp; deep dives from full transcripts · history kept per show · updated June 30, 2026</p>
+  <p class="sub">19 shows · Smart Brevity summaries, guest intros &amp; deep dives from full transcripts · history kept per show · updated July 1, 2026</p>
   <input id="q" type="text" placeholder="Filter by show, guest, or topic…">
   <div id="cards"></div>
   <div id="notes"></div>
@@ -1351,6 +1351,133 @@ const DATA = {
    "show": "The AI Daily Brief",
    "host": "Nathaniel Whittemore",
    "episodes": [
+    {
+     "title": "Fable is Back: Here's What You Should Try First",
+     "date": "2026-07-01",
+     "link": "https://aidailybrief.ai/e/2026-07-01",
+     "tldr": [
+      "<strong>Fable 5 is back.</strong> After 19 days offline, Anthropic's Fable 5 returns for all global users, with 50% of weekly usage subsidized through July 7.",
+      "<strong>OpenAI's mystery half-off.</strong> The Information reports OpenAI quietly found an optimization that cut inference costs ~50% on the models it touched — with no blog post, no CEO quote, and the method held as a closely guarded secret.",
+      "<strong>Everyone's chasing cheaper tokens.</strong> Base44 is building its own model to control costs, AWS is pouring $1B into forward-deployed engineers, and Claude Tag is coming to Microsoft Teams.",
+      "<strong>Go harder than half-price.</strong> SpaceX offered Memphis residents 50%-off Starlink to quell backlash over its data center; NLW applauds the direction but calls the gesture far too small."
+     ],
+     "deep": [
+      {
+       "h": "Fable 5 returns — and the terms attached",
+       "p": "The headline event is the return of Anthropic's Fable 5 after a 19-day outage, but the fine print matters as much as the comeback.",
+       "b": [
+        "Fable 5 is back for all global users, but with only 50% of each week's usage subsidized until July 7 — a metered free window rather than an unlimited relaunch.",
+        "The comeback follows weeks of speculation; earlier signals like a Claude code snippet hinting at weekly usage limits and the model reappearing on Amazon Bedrock had pushed return odds sharply higher.",
+        "Conventional wisdom said to hoard the limited free usage for your hardest technical problems, but NLW argues that's not where Fable's real edge shows up.",
+        "NLW frames the week as two intertwined stories: the industry's frantic hunt for cheaper inference and the practical question of what Fable is actually best at."
+       ]
+      },
+      {
+       "h": "What to actually try Fable on first",
+       "p": "NLW's hands-on take is that Fable 5's advantages are in strategic thinking and rubric-driven writing, not just hard technical tasks.",
+       "b": [
+        "On strategy, Fable 5 \"blows the field away\": unlike GPT-5.5 and Opus 4.8, which cave immediately under pushback and over-interpret instructions, Fable accepts part of a critique while holding its ground on the rest — behavior NLW says he's never seen from another model.",
+        "It's also token-efficient, so strategic work won't quickly chew through the 50% weekly usage cap.",
+        "On writing, NLW found Fable far better at instruction-following, with fewer AI-isms and less try-hard prose — contrary to some other vibe checks.",
+        "His theory: when you supply a clear rubric or examples of good writing, Fable meets that standard far better than prior models, even if it isn't necessarily better at blank-page creation."
+       ]
+      },
+      {
+       "h": "OpenAI's secret 50% inference cut",
+       "p": "OpenAI reportedly halved inference costs on some models via an internal optimization it is treating as proprietary — a claim NLW urges caution on.",
+       "b": [
+        "Per The Information's Stefanie Palazzolo, OpenAI engineers squeezed far more out of existing servers rather than chasing new chips; the first visible payoff appeared in logged-out ChatGPT traffic, where required GPU count dropped to a few hundred.",
+        "There was no blog post, press release, or CEO quote — just one source describing internal conversations, which NLW notes was quickly amplified into headlines suggesting the compute crunch is solved.",
+        "The exact method is unclear; candidates include quantization, KV caching, batching, or routing simpler queries to cheaper models — or some mix.",
+        "NLW's caution (\"there's still no free lunch\"): it may be a smaller breakthrough than billed and is being tested on OpenAI's least-engaged users, hinting at possible quality-degradation risk; the technique is guarded so rivals can't copy it."
+       ]
+      },
+      {
+       "h": "The scramble for cheaper inference",
+       "p": "Beyond OpenAI, the day's stories all point to the same pressure: everyone is trying to bend the cost curve of running models.",
+       "b": [
+        "Base44 is building its own model specifically to control inference costs, rather than paying frontier-lab rates for every call.",
+        "AWS is committing roughly $1B to forward-deployed engineers — embedding technical staff with customers to drive adoption of its AI stack.",
+        "Anthropic's Claude Tag is coming to Microsoft Teams, extending Claude deeper into enterprise collaboration workflows.",
+        "Taken together, NLW reads the moves as the market maturing from raw capability races toward unit-economics and distribution."
+       ]
+      },
+      {
+       "h": "SpaceX, Memphis, and 'go harder than half-price'",
+       "p": "A data-center community-relations story becomes NLW's case study in how tech infrastructure should share its benefits.",
+       "b": [
+        "SpaceX offered Memphis residents half-price Starlink to quell local backlash tied to its data center presence in the community.",
+        "NLW is glad operators are starting to cut communities into the benefits, calling it an encouraging sign these relationships are being rethought.",
+        "But he argues making residents become paying customers to unlock a discount is far too small a gesture for the scale of impact involved.",
+        "His broader point: as data centers reshape local power, water, and economics, operators need to go a lot harder than token discounts to earn a social license."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "How Big Is the AI Economy?",
+     "date": "2026-06-30",
+     "link": "https://aidailybrief.ai/e/2026-06-30",
+     "tldr": [
+      "<strong>$175B and accelerating.</strong> Exponential View audited 1,000+ AI companies and found a $175B annualized run rate — $110B banked over 12 months — growing 3x faster than any prior IT wave.",
+      "<strong>The build-out is paying back — for now.</strong> CapEx hits $848B this year and $2T cumulatively, but quarterly revenue now exceeds CapEx depreciation and old GPUs keep earning past their six-year life.",
+      "<strong>Ramageddon.</strong> AI memory demand has become a tax on all electronics — Micron raised prices 60% in three months and targets 84% margins, while Apple, Microsoft, and Lenovo hike hardware prices.",
+      "<strong>Policy and deals pile up.</strong> A Fable identity-verification rumor, Warner's agent-neutrality bill, California's half-price Claude deal, and the end of Amazon's Anthropic sweetheart pricing all landed the same day."
+     ],
+     "deep": [
+      {
+       "h": "The State of the AI Economy: real, big, fast",
+       "p": "Exponential View's new report tries to answer the bubble question with revenue data rather than vibes, and finds demand more validated than the discourse suggests.",
+       "b": [
+        "The audit covered over 1,000 AI companies with confidence-weighted sources and deduplicated spend, landing on $110B banked over 12 months and a $175B annualized run rate.",
+        "The industry now adds $1B in cumulative revenue every two days — roughly 90x faster than 2023, when the same billion took about 180 days.",
+        "AI revenue still equals just 0.42% of US GDP (versus ~9.4% for all IT), but it's up 3x versus Q1 2025 and 10x versus Q1 2024.",
+        "33% of public companies now cite AI's impact on earnings calls, up from about 10% in early 2023."
+       ]
+      },
+      {
+       "h": "The bubble math: CapEx versus returns",
+       "p": "NLW walks through the report's answer to the core worry — that spending is racing ahead of any plausible payback.",
+       "b": [
+        "CapEx will reach $848B this year and $2T cumulatively since 2020, still mostly funded from balance-sheet cash but increasingly debt-financed.",
+        "Since Q4 last year, quarterly revenues have exceeded CapEx depreciation — though not yet the full cumulative bill.",
+        "A key bubble fear was GPUs going obsolete before earning out; rental-yield data shows older GPUs delivering meaningful returns into years seven, eight, and even nine.",
+        "High-AI-spend companies grew revenue more than 100% over three years versus 15–20% for non-adopters — a 92% growth differential."
+       ]
+      },
+      {
+       "h": "Tokens, prices, and the agentic explosion",
+       "p": "The usage side shows prices collapsing even as capability and volume soar, expanding the range of economically viable applications.",
+       "b": [
+        "Global token volume now exceeds 30 quadrillion per month, growing 14x year over year.",
+        "The blended price per million tokens fell from $17 to $2 between mid-2024 and mid-2026, even as a capabilities index rose from 112 to 158.",
+        "The shift from chat to agents is the multiplier: an agentic coding task can consume roughly 1,200x the tokens of a single chat query.",
+        "Value is climbing the stack — model and app-layer revenue (companies like Cursor) is up nearly 3x in a year, even as labs push into both infrastructure and apps."
+       ]
+      },
+      {
+       "h": "Ramageddon: the memory crunch",
+       "p": "AI's appetite for memory is rippling into consumer electronics prices, earning the crisis its own nickname.",
+       "b": [
+        "Micron raised prices 60% in three months, quadrupled them over a year, and is targeting 84% margins — putting it behind only Google and Nvidia among US firms by that measure.",
+        "Apple has raised prices up to 15% and Microsoft hiked Xbox pricing; Lenovo says pricing will \"never return to where it was last year.\"",
+        "AWS is raising EC2 capacity-block prices 20% for Nvidia workloads, sparing only its own Trainium chips, while H100 spot prices fell 40% from May peaks even as contract prices keep rising.",
+        "Amid the crunch, Apple petitioned the Trump administration to buy memory from blacklisted Chinese supplier CXMT, and a California class action alleges Samsung, SK Hynix, and Micron ran a price-fixing cartel."
+       ]
+      },
+      {
+       "h": "Policy and deals roundup",
+       "p": "The same day brought a dense run of governance and commercial news around model access and pricing.",
+       "b": [
+        "Code strings in the Claude app suggest Fable will be credit-based, billed separately from subscriptions, and may require users to submit identity documents to unlock — likened to getting a gun license.",
+        "Senator Mark Warner is circulating a 25-page draft protecting third-party agents and creating a \"duty of loyalty\" barring agents from favoring undisclosed partners; it covers only consumer-facing agents and isn't expected to move this year.",
+        "California's Governor Newsom announced the first statewide AI rollout — Claude at 50% off for all state and local government, plus free workforce training — while cautioning AI \"should not replace the human work of government.\"",
+        "Anthropic renegotiated Amazon's wholesale compute-hours pricing to standard token-based rates, ending the subsidy era; separately, Meta banned coding agents on its data-labeling team to avoid distillation and legal exposure as it builds MetaCode."
+       ],
+       "note": "Neutral summary of policy and legislative developments discussed on the show; positions described are those of the officials and companies cited, not endorsements."
+      }
+     ]
+    },
     {
      "title": "The Capability Overhang Playbook",
      "date": "2026-06-28",
