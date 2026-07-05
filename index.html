@@ -119,7 +119,7 @@ footer { color:var(--muted); font-size:12px; font-style:italic; margin-top:34px;
     <h1>Podcast Digest<span class="arrow"> ←</span></h1>
     <p class="tagline">A low-energy reading of this week's podcasts — summaries over streaming.</p>
   </header>
-  <p class="sub">19 shows · Smart Brevity summaries, guest intros &amp; deep dives from full transcripts · history kept per show · updated July 3, 2026</p>
+  <p class="sub">19 shows · Smart Brevity summaries, guest intros &amp; deep dives from full transcripts · history kept per show · updated July 4, 2026</p>
   <input id="q" type="text" placeholder="Filter by show, guest, or topic…">
   <div id="cards"></div>
   <div id="notes"></div>
@@ -1416,6 +1416,70 @@ const DATA = {
    "show": "The AI Daily Brief",
    "host": "Nathaniel Whittemore",
    "episodes": [
+    {
+     "title": "AI Companies Are Hiring More",
+     "date": "2026-07-02",
+     "link": "https://aidailybrief.ai/e/2026-07-02",
+     "tldr": [
+      "<strong>The jobs data flips the script.</strong> Ramp and Revelio found high-AI-adoption firms grew headcount 10% over two years (12% at entry level) while low-adoption firms stayed flat — the first real evidence AI-heavy firms are hiring, not shedding, people.",
+      "<strong>OpenAI floats a 5% gift to Washington.</strong> OpenAI proposed contributing a ~$42B, 5% equity stake to an Alaska-style sovereign wealth fund and wants every leading lab to chip in 5% too — what NLW calls a “strange new era of tributary capitalism.”",
+      "<strong>Meta joins the compute-for-rent club.</strong> “Meta Compute” would sell excess AI capacity à la AWS/CoreWeave; the report sent Meta up 8.8% (best day in six months) and knocked CoreWeave and Nebius down 17%.",
+      "<strong>Real work, quadrupled.</strong> The Center for AI Safety's Remote Labor Index has Fable completing 16.1% of freelance tasks at professional quality, up from GPT-5.2's 2.5% — “the frontier has more than quadrupled in under eight months.”"
+     ],
+     "deep": [
+      {
+       "h": "OpenAI floats handing 5% to the US government",
+       "p": "OpenAI proposed contributing a 5% equity stake to a government sovereign wealth fund the same week other firms deepened financial ties to Washington.",
+       "b": [
+        "The stake — worth roughly $42B at current valuations — would seed a fund modeled on Alaska's Permanent Fund; sources call the talks “conceptual,” it's unclear whether the government would buy it or receive it as a gift, and it may require an act of Congress.",
+        "OpenAI further proposed that all leading developers — potentially Google, Meta and others beyond Anthropic — contribute 5% of their equity, though no other firm is confirmed to be in the discussions.",
+        "The Financial Times read it as a fairly clear quid pro quo: an ownership stake “could help secure good relations with the administration” while sharing AI-generated wealth with the public.",
+        "Separately, Micron agreed to invest $250M into government-funded “Trump accounts” for children; NLW framed the pattern as a “strange new era of tributary capitalism,” with the Overton window on such deals clearly shifting."
+       ],
+       "note": "Neutral summary of reported proposals and the host's stated views on a politically charged topic; not an endorsement of any position."
+      },
+      {
+       "h": "Meta Compute and the frontier-lab-to-cloud pivot",
+       "p": "Meta is reportedly building a cloud business to monetize excess AI capacity, echoing SpaceX's compute pivot.",
+       "b": [
+        "“Meta Compute,” led by infra head Janardhan with Daniel Gross and Dina Powell McCormick, would sell hosted-model access (like AWS Bedrock) or raw compute (like CoreWeave); plans are still in flux but far enough along to have a name and a team.",
+        "Markets cheered: Meta rose as much as 10% and closed up 8.8% — its best single day in six months — while CoreWeave and Nebius each fell 17%; Jefferies likened it to early AWS, Mizuho called it more a “plan B” that adds a margin of safety.",
+        "The move mirrors SpaceX, whose $1.25B-a-month Anthropic compute deal now reportedly out-earns Starlink; OpenAI's Rune quipped, “You either die a frontier lab or live long enough to see yourself sell compute.”",
+        "The Wall Street Journal also reported SpaceX showed investors a prototype AI handset — slimmer than an iPhone, proprietary OS, integrating xAI tech — which Elon Musk denied within minutes as “utterly false.”"
+       ]
+      },
+      {
+       "h": "Anthropic pulls its Claude Code monitoring of Chinese labs",
+       "p": "After a Reddit uproar, Anthropic rolled back a March experiment that flagged certain users inside Claude Code.",
+       "b": [
+        "A Reddit user alleged that since early April, Claude Code had checked whether users ran a proxy and used time-zone and metadata signals to infer whether someone was in China or tied to a Chinese lab, transmitting that back to Anthropic.",
+        "Co-developer Tarik said the experiment was meant to prevent reseller account abuse and model distillation, that stronger mitigations have since replaced it, and that the rollback would ship in the next release.",
+        "NLW's takeaway: the real story isn't the anti-distillation effort but the reminder of how much visibility Anthropic has into the work being done on its systems.",
+        "The controversy did little to dampen enthusiasm, as users quickly flocked back to the newly restored Fable 5."
+       ]
+      },
+      {
+       "h": "Fable 5 returns to gushing — and Opus-routing gripes",
+       "p": "Users regained access to Fable 5 to rave reviews, alongside complaints about tasks being rerouted to Opus.",
+       "b": [
+        "Elvis Sun said Fable audited his business, cracked backend and engineering problems “Opus was too dumb to crack,” and is “smarter than me”; Andrew McAllister called it “an absolute monster” that's “machine-gunning PRs.”",
+        "Reports on Opus-routing were mixed: Nick Dobos said Fable did only 20% of the work, one user paid $321 for a session where “Fable 5 refused to do the work,” while analyst Max Weinbach saw no refusals.",
+        "Theo found Fable shines as an orchestrator of other agents — “the first model that feels like it actually gets how to use and orchestrate agents” — which NLW said makes the Sonnet 5 release make more sense.",
+        "Ethan Mollick cautioned that the flood of workflow posts shows how little anyone knows about organizing long-running agents: “Nobody has enough experience to reach any real conclusions.”"
+       ]
+      },
+      {
+       "h": "The jobs data cuts against the doom narrative",
+       "p": "New studies suggest AI-heavy firms are hiring more even as model capability climbs and specific sectors shed jobs.",
+       "b": [
+        "The Center for AI Safety's Remote Labor Index — which grades deliverables against a paid professional's gold standard — put Fable at 16.1%, up from Opus 4A's 8.3%, GPT-5.5's 6.3% and GPT-5.2's 2.5% late last year: a more-than-4x jump in under eight months.",
+        "Ramp and Revelio correlated AI spend with payroll across 21,000 firms: high-adoption firms grew headcount 10% over two years (12% at entry level) versus flat for low-adopters, with growth starting 6–12 months in at just ~$30 per employee per month.",
+        "Countercurrents remain: BLS data shows tech and finance shedding ~28K jobs a month in 2026 even as the economy adds 113K, and analysts split on genuine AI productivity versus a cost-cutting narrative layered over 2022 over-hiring.",
+        "Supporting the augmentation case: Ford rehired 350 “graybeard” engineers to retrain underperforming AI and topped JD Power's quality survey; China is pressuring firms not to lay off for AI; and Box's Aaron Levie found 79% of mature AI adopters expect headcount to rise."
+       ]
+      }
+     ]
+    },
     {
      "title": "Fable is Back: Here's What You Should Try First",
      "date": "2026-07-01",
